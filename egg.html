@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Egg</title>
+    <style>
+        body{
+            background-color:#9ab8da;
+        }
+        .egg {
+            width: 300px;
+            height: 380px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 50% /55% 55% 45% 45%;
+            background: #9eb7d5;
+            box-shadow:
+            -10px 0px 15px -5px #b1c9e3 inset,
+            -20px 10px 40px 0px #b1c9e3 inset,           40px -30px 80px 0 #778ca9 inset,            40px -140px 140px -100px #778ca9 inset;
+        }
+        .egg:before{
+            content:'';
+            position: absolute;
+            width: 250px;
+            height: 230px;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            margin: auto;
+            background-color: transparent;
+            box-shadow: -80px 130px 40px -10px #667a95,
+                        -60px 100px 30px -10px #667a95,
+                        -80px 90px 80px 20px #667a95;
+        }
+        .egg:after{
+            content:'';
+            background-color: rgb(255, 255,255,.5);
+            width: 50px;
+            height: 110px;
+            position: absolute;
+            border-radius: 50%;
+            top: 50px;
+            right: 50px;
+            transform: rotate(-26deg);
+            filter:blur(40px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="egg"></div>
+</body>
+
+</html>
